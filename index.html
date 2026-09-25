@@ -60,6 +60,12 @@
 
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(55,217,155,.55)}70%{box-shadow:0 0 0 7px rgba(55,217,155,0)}100%{box-shadow:0 0 0 0 rgba(55,217,155,0)}}
   @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  /* stack on narrow screens */
+  @media (max-width:840px){
+    .stage{flex-direction:column;align-items:center}
+    .col-admin{width:100%;max-width:560px}
+    .col-fan{flex:0 0 auto;width:340px}
+  }
 </style>
 </head>
 <body>
